@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Woven plant fiber Better™ Edition</name>
+	<author>DimonSever000</author>
+	<description>This mod allow you to gather wild plant to make a new kind of cheap textil called "plant fiber"</description>
+	<packageId>DimonSever000.FiberCloth.Specific</packageId>
+	<supportedVersions>
+	<li>1.4</li>
+	<li>1.5</li>
+	<li>1.6</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>dimonsever000.fibercloth.specific</li>
+	</loadAfter>
+</ModMetaData> 

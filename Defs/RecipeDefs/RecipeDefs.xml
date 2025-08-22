@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!---->
+	<RecipeDef>
+		<defName>Sift_GatheredPlant_CraftingSpot</defName>
+		<label>sift gathered plant</label>
+		<description>Sift through gathered plants for useful material like wood and berries. It's not very effective, but a good way to dispose of gathered plant.</description>
+		<jobString>sifting through gathered plants.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>50</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GatheredPlant</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<WoodLog>1</WoodLog>
+			<RawBerries>1</RawBerries>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef>
+		<defName>Make_PlantFiber_FromGatheredPlant_CraftingSpot</defName>
+		<label>make plant fiber by hand</label>
+		<description>Make plant fiber by hand at a crafting spot. It's not very effective, you really could use a tailoring bench...</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>750</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GatheredPlant</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlantFibber>5</PlantFibber>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef>
+		<defName>Make_PlantFiber_FromGatheredPlant_TailoringBench</defName>
+		<label>make plant fiber from gathered plant</label>
+		<description>Make plant fiber from gathered plant. You produce more fiber at a higher rate using a tailoring bench than a crafting spot</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>400</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GatheredPlant</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlantFibber>10</PlantFibber>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef>
+		<defName>Make_PlantFiber_FromHay</defName>
+		<label>make plant fiber from hay</label>
+		<description>Make plant fiber from hay. Using hay is better than using gathered plant, you can mass produce fiber with it.</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>200</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlantFibber>15</PlantFibber>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef>
+		<defName>Make_Hay_FromGatheredPlant</defName>
+		<label>make hay from gathered plant</label>
+		<description>Convert gathered plant into edible food for your farm animal ! however, gathered plant have a pretty low nutritional value and working them into hay is not very efficient, so use this only if you have too much and don't know what to do with them...</description>
+		<jobString>Converting plant fiber into hay.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>250</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GatheredPlant</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Hay>10</Hay>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+			<li>CraftingSpot</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+</Defs>

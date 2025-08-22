@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="BedBase">
+		<defName>plantbedding</defName>
+		<label>plant bedding</label>
+		<description>A simple bedding made of plant fiber, slightly better than a sleeping spot but very flammable.</description>
+		<graphicData>
+			<texPath>Things/Building/Furniture/Bed/PlantBedding</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(1,2)</drawSize>
+		</graphicData>
+		<castEdgeShadows>True</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>25</MaxHitPoints>
+			<Flammability>2.0</Flammability>
+			<Mass>1</Mass>
+			<Comfort>0.4</Comfort>
+			<Beauty>-2</Beauty>
+			<SurgerySuccessChanceFactor>0.7</SurgerySuccessChanceFactor>
+			<WorkToBuild>30</WorkToBuild>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>Dresser</li>
+					<li>EndTable</li>
+					<li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<size>(1,2)</size>
+		<costList>
+			<GatheredPlant>40</GatheredPlant>
+		</costList>
+		<building>
+			<bed_showSleeperBody>true</bed_showSleeperBody>
+			<bed_healPerDay>4</bed_healPerDay>
+			<bed_caravansCanUse>false</bed_caravansCanUse>
+			<destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+			<destroyShakeAmount>0</destroyShakeAmount>
+		</building>
+		<pathCost>14</pathCost>
+		<passability>Standable</passability>
+		<uiOrder>2027</uiOrder>
+	</ThingDef>
+</Defs>

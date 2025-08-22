@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!---->
+	<ThingDef ParentName="ApparelMakeableBase">
+		<defName>Apparel_PlantGrownTunic</defName>
+		<label>Plant grown tunic</label>
+		<description>A lovely piece of clothing, it inspires confidence but does not protect against anything, whether it's cold or bullets.</description>
+		<graphicData>
+			<texPath>Things/Leaf_Suit/Leaf_Suit</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<tradeability>All</tradeability>
+		<costList>
+			<GatheredPlant>40</GatheredPlant>
+		</costList>
+		<statBases>
+			<MaxHitPoints>35</MaxHitPoints>
+			<WorkToMake>1200</WorkToMake>
+			<Mass>0.2</Mass>
+			<ArmorRating_Sharp>0.005</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>2</Insulation_Cold>
+			<Insulation_Heat>4</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<thingCategories>
+			<li>ApparelMisc</li>
+		</thingCategories>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Leaf_Suit/Leaf_Suit</wornGraphicPath>
+			<layers>
+				<li>OnSkin</li>
+			</layers>
+			<tags>
+				<li>PlantTunic</li>
+			</tags>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+		</apparel>
+		<equippedStatOffsets>
+			<SocialImpact>0.15</SocialImpact>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<recipeUsers>
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<unfinishedThingDef/>
+		</recipeMaker>
+		<tradeTags>
+			<li>BasicClothing</li>
+		</tradeTags>
+	</ThingDef>
+	<!---->
+</Defs>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Patch>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="Make_PlantFiber_FromGatheredPlant_CraftingSpot"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="Make_PlantFiber_FromGatheredPlant_TailoringBench"]</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[defName="Make_PlantFiber_FromHay"]</xpath>
+	</Operation>
+</Patch>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>Make_PlantFiber_FromGatheredPlant_Loom</defName>
+		<label>make plant fiber from gathered plant</label>
+		<description>Make plant fiber from gathered plant.</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>400</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>GatheredPlant</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlantFibber>10</PlantFibber>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableLoom</li>
+			<li>TableElecLoom</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
+	<RecipeDef>
+		<defName>Make_PlantFiber_FromHay</defName>
+		<label>make plant fiber from hay</label>
+		<description>Make plant fiber from hay. Using hay is better than using gathered plant, you can mass produce fiber with it.</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>200</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>GatheredPlant</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<PlantFibber>15</PlantFibber>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>TableLoom</li>
+			<li>TableElecLoom</li>
+		</recipeUsers>
+	</RecipeDef>
+</Defs>

@@ -176,4 +176,57 @@
 		</recipeUsers>
 	</RecipeDef>
 	<!---->
+	<RecipeDef>
+		<defName>Make_Timberweave_FromGatheredPlant_TailoringBench</defName>
+		<label>make timberweave</label>
+		<description>Make timberweave from plant fiber, hay and wood.</description>
+		<jobString>Making plant fiber.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Tailor</soundWorking>
+		<workAmount>400</workAmount>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>PlantFibber</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>WoodLog</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Hay</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>PlantFibber</li>
+				<li>WoodLog</li>
+				<li>Hay</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Leather_Timberweave>10</Leather_Timberweave>
+		</products>
+		<workSkill>Crafting</workSkill>
+		<recipeUsers>
+			<li>HandTailoringBench</li>
+			<li>ElectricTailoringBench</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!---->
 </Defs>

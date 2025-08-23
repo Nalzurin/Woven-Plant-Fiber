@@ -11,7 +11,7 @@ namespace PlantFibber
 {
     public class Settings : ModSettings
     {
-        public bool toggleHarvestPlantFiber;
+        public bool toggleHarvestPlantFiber = true;
         private Dictionary<string, int> stringIntPairs;
 
         public Dictionary<ThingDef, int> ThingDefIntPairs;

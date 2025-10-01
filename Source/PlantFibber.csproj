@@ -68,6 +68,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameComponent_PlantFiber.cs" />
     <Compile Include="PlantFibberMod.cs" />
     <Compile Include="PlaySettings_DoMapControls_TogglePlantHarvestPatch.cs" />
     <Compile Include="Settings.cs" />

@@ -19,7 +19,7 @@ namespace PlantFibber
             {
                 return true;
             }
-            if(!Utility.Settings.toggleHarvestPlantFiber)
+            if(!Current.Game.GetComponent<GameComponent_PlantFiber>().toggleHarvestPlantFiber)
             {
                 return true;
             }

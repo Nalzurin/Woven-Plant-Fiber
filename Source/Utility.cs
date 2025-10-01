@@ -15,6 +15,7 @@ namespace PlantFibber
         public static List<ThingDef> PlantDefs => DefDatabase<ThingDef>.AllDefsListForReading.Where(x => x.plant != null).ToList();
 
         public static Settings Settings => LoadedModManager.GetMod<PlantFibberMod>().GetSettings<Settings>();
+
         static Utility()
         {
             Settings.FillStringIntDictionary();

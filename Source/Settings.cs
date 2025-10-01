@@ -11,7 +11,6 @@ namespace PlantFibber
 {
     public class Settings : ModSettings
     {
-        public bool toggleHarvestPlantFiber = true;
         private Dictionary<string, int> stringIntPairs;
 
         public Dictionary<ThingDef, int> ThingDefIntPairs;
@@ -31,7 +30,6 @@ namespace PlantFibber
             }
             Scribe_Collections.Look(ref stringIntPairs, "stringIntPairs", LookMode.Value, LookMode.Value);
             Scribe_Values.Look(ref plantFibberInZone, "plantFibberInZone");
-            Scribe_Values.Look(ref toggleHarvestPlantFiber, "toggleHarvestPlantFiber", true);
         }
 
         public void FillThingDefIntDictionary()

@@ -18,7 +18,7 @@ namespace PlantFibber
         public static readonly Texture2D Icon = ContentFinder<Texture2D>.Get("UI/Buttons/TogglePlantFiber");
         public static void Postfix(WidgetRow row)
         {
-            row.ToggleableIcon(ref Utility.Settings.toggleHarvestPlantFiber, Icon, "PlantFibber.TogglePlantHarvest".Translate());
+            row.ToggleableIcon(ref Current.Game.GetComponent<GameComponent_PlantFiber>().toggleHarvestPlantFiber, Icon, "PlantFibber.TogglePlantHarvest".Translate());
         }
     }
 }

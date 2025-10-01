@@ -14,7 +14,7 @@ namespace PlantFibber
         {
         }
 
-        public bool toggleHarvestPlantFiber = false;
+        public bool toggleHarvestPlantFiber = true;
 
         public override void ExposeData()
         {
